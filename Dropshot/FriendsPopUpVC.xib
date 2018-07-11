@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendsPopUpVC" customModule="Dropshot" customModuleProvider="target">
+            <connections>
+                <outlet property="addFriendButton" destination="S0m-X4-fP5" id="iYd-qE-SGA"/>
+                <outlet property="profilePicture" destination="Maa-au-pbq" id="Kby-p7-aK5"/>
+                <outlet property="usernameLabel" destination="4xF-L7-4g3" id="lww-0q-Cyq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Maa-au-pbq">
+                    <rect key="frame" x="107.5" y="253" width="160" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="hhd-Fg-iQ1"/>
+                        <constraint firstAttribute="height" constant="160" id="r9G-FP-QT3"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0m-X4-fP5">
+                    <rect key="frame" x="107.5" y="421" width="160" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Smh-9c-Uif"/>
+                    </constraints>
+                    <connections>
+                        <action selector="takeActionButton:" destination="-1" eventType="touchUpInside" id="8kx-Su-6Yb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xF-L7-4g3">
+                    <rect key="frame" x="107.5" y="205" width="160" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Vna-LJ-ppO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="S0m-X4-fP5" firstAttribute="top" secondItem="Maa-au-pbq" secondAttribute="bottom" constant="8" symbolic="YES" id="2Ht-e0-zQ8"/>
+                <constraint firstItem="Maa-au-pbq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="35d-P1-bsD"/>
+                <constraint firstItem="4xF-L7-4g3" firstAttribute="leading" secondItem="Maa-au-pbq" secondAttribute="leading" id="HRf-OL-w4H"/>
+                <constraint firstItem="S0m-X4-fP5" firstAttribute="leading" secondItem="Maa-au-pbq" secondAttribute="leading" id="KCp-8e-TUz"/>
+                <constraint firstItem="Maa-au-pbq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="M8c-oG-aaQ"/>
+                <constraint firstItem="Maa-au-pbq" firstAttribute="top" secondItem="4xF-L7-4g3" secondAttribute="bottom" constant="8" symbolic="YES" id="Zdv-dC-2wX"/>
+                <constraint firstItem="S0m-X4-fP5" firstAttribute="trailing" secondItem="Maa-au-pbq" secondAttribute="trailing" id="qXB-ft-PHN"/>
+                <constraint firstItem="4xF-L7-4g3" firstAttribute="trailing" secondItem="Maa-au-pbq" secondAttribute="trailing" id="thC-Ao-TVC"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
